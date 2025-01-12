@@ -1,183 +1,194 @@
-React Starter Template
+# React Starter Template
 
 This is a comprehensive React starter template designed to help developers quickly set up and maintain a scalable React application. It includes essential configurations, tools, and libraries to enhance productivity and maintain code quality.
 
-Features
+---
 
-Vite for blazing-fast build and development.
+## Features
 
-Material-UI for elegant and responsive UI components.
+- **Vite** for blazing-fast build and development.
+- **Material-UI** for elegant and responsive UI components.
+- **Redux Toolkit** for state management.
+- **React Query** for efficient server state handling.
+- **SuperTokens** for robust authentication.
+- **ECharts** for data visualizations.
+- **Formik** and **Yup** for form handling and validation.
+- **Prettier** and **ESLint** for code formatting and linting.
+- **Jest** and **Testing Library** for unit and integration testing.
+- **Husky** for managing Git hooks.
 
-Redux Toolkit for state management.
+---
 
-React Query for efficient server state handling.
-
-SuperTokens for robust authentication.
-
-ECharts for data visualizations.
-
-Formik and Yup for form handling and validation.
-
-Prettier and ESLint for code formatting and linting.
-
-Jest and Testing Library for unit and integration testing.
-
-Husky for managing Git hooks.
-
-Prerequisites
+## Prerequisites
 
 Ensure you have the following installed:
 
-Node.js (>= 16.x)
+- Node.js (>= 16.x)
+- npm (>= 8.x) or yarn (>= 1.x)
 
-npm (>= 8.x) or yarn (>= 1.x)
+---
 
-Getting Started
+## Getting Started
 
-1. Clone the Repository
+### 1. Clone the Repository
 
+```bash
 git clone <repository-url>
 cd react-starter-template
+```
 
-2. Install Dependencies
+### 2. Install Dependencies
 
+```bash
 npm install
+```
 
-3. Start Development Server
+### 3. Start Development Server
 
+```bash
 npm run dev
+```
 
-Open http://localhost:5173 in your browser.
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-4. Build for Production
+### 4. Build for Production
 
+```bash
 npm run build
+```
 
-5. Preview the Production Build
+### 5. Preview the Production Build
 
+```bash
 npm run preview
+```
 
-Project Structure
+---
 
+## Project Structure
+
+```
 .
-├── public/ # Static assets
-├── src/ # Source files
-│ ├── components/ # Reusable components
-│ ├── features/ # Feature-specific logic
-│ ├── hooks/ # Custom hooks
-│ ├── pages/ # Page components
-│ ├── redux/ # Redux-related files
-│ ├── styles/ # Global styles
-│ └── utils/ # Utility functions
-├── .husky/ # Git hooks
-├── .gitignore # Git ignore rules
-├── package.json # Project metadata and scripts
-├── vite.config.js # Vite configuration
-├── jest.config.cjs # Jest configuration
-└── README.md # Project documentation
+├── public/               # Static assets
+├── src/                  # Source files
+│   ├── components/       # Reusable components
+│   ├── features/         # Feature-specific logic
+│   ├── hooks/            # Custom hooks
+│   ├── pages/            # Page components
+│   ├── redux/            # Redux-related files
+│   ├── styles/           # Global styles
+│   └── utils/            # Utility functions
+├── .husky/               # Git hooks
+├── .gitignore            # Git ignore rules
+├── package.json          # Project metadata and scripts
+├── vite.config.js        # Vite configuration
+├── jest.config.cjs       # Jest configuration
+└── README.md             # Project documentation
+```
 
-Available Scripts
+---
 
-Development
+## Available Scripts
 
-npm run dev: Start the development server.
+### Development
 
-Build
+- **`npm run dev`**: Start the development server.
 
-npm run build: Build the application for production.
+### Build
 
-npm run preview: Preview the production build locally.
+- **`npm run build`**: Build the application for production.
+- **`npm run preview`**: Preview the production build locally.
 
-Linting and Formatting
+### Linting and Formatting
 
-npm run lint: Run ESLint to check code quality.
+- **`npm run lint`**: Run ESLint to check code quality.
+- **`npm run lint:fix`**: Automatically fix linting issues.
+- **`npm run format`**: Format the code using Prettier.
 
-npm run lint:fix: Automatically fix linting issues.
+### Testing
 
-npm run format: Format the code using Prettier.
+- **`npm run test`**: Run tests using Jest.
+- **`npm run coverage`**: Generate test coverage report.
 
-Testing
+### Git Hooks
 
-npm run test: Run tests using Jest.
+- **`npm run prepare`**: Install Husky hooks.
 
-npm run coverage: Generate test coverage report.
+---
 
-Git Hooks
+## Key Dependencies
 
-npm run prepare: Install Husky hooks.
+### Runtime
 
-Key Dependencies
+- **React**: UI library for building user interfaces.
+- **React Router DOM**: Routing library for React.
+- **Material-UI**: UI framework for React.
+- **Redux Toolkit**: State management library.
+- **React Query**: Data-fetching library.
+- **SuperTokens**: Authentication solution.
+- **ECharts**: Data visualization library.
+- **Formik**: Form handling library.
+- **Yup**: Schema validation library.
 
-Runtime
+### Development
 
-React: UI library for building user interfaces.
+- **Vite**: Fast build tool for modern web projects.
+- **ESLint**: Linting tool for identifying problematic patterns in code.
+- **Prettier**: Code formatter.
+- **Jest**: Testing framework.
+- **Testing Library**: Utilities for testing React components.
+- **Husky**: Git hooks manager.
 
-React Router DOM: Routing library for React.
+---
 
-Material-UI: UI framework for React.
+## Testing
 
-Redux Toolkit: State management library.
+1. Ensure all tests pass:
 
-React Query: Data-fetching library.
-
-SuperTokens: Authentication solution.
-
-ECharts: Data visualization library.
-
-Formik: Form handling library.
-
-Yup: Schema validation library.
-
-Development
-
-Vite: Fast build tool for modern web projects.
-
-ESLint: Linting tool for identifying problematic patterns in code.
-
-Prettier: Code formatter.
-
-Jest: Testing framework.
-
-Testing Library: Utilities for testing React components.
-
-Husky: Git hooks manager.
-
-Testing
-
-Ensure all tests pass:
-
+```bash
 npm run test
+```
 
-Generate a coverage report:
+2. Generate a coverage report:
 
+```bash
 npm run coverage
+```
 
-The report will be located in the coverage/ directory.
+The report will be located in the `coverage/` directory.
 
-Git Hooks
+---
+
+## Git Hooks
 
 This project uses Husky to manage Git hooks:
 
-pre-commit: Runs linting before committing.
-
-commit-msg: Ensures commit messages follow the standard format.
+- **`pre-commit`**: Runs linting before committing.
+- **`commit-msg`**: Ensures commit messages follow the standard format.
 
 To manually install hooks, run:
 
+```bash
 npm run prepare
+```
 
-Contribution Guidelines
+---
 
-Fork the repository and clone your fork.
+## Contribution Guidelines
 
-Create a feature branch:
+1. Fork the repository and clone your fork.
+2. Create a feature branch:
 
+```bash
 git checkout -b feature/your-feature
+```
 
-Commit your changes following conventional commits.
+3. Commit your changes following conventional commits.
+4. Push to your branch and create a pull request.
 
-Push to your branch and create a pull request.
+---
 
-Feedback
+## Feedback
 
-Feel free to submit issues or feature requests through the [Issues](/issues) tab.
+Feel free to submit issues or feature requests through the [Issues]\(/issues) tab.
+
